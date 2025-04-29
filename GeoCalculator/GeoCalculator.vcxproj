@@ -22,7 +22,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{97aea649-057f-4b0f-8ddc-8d39346773b2}</ProjectGuid>
+    <ProjectGuid>{7c88c19e-5788-415d-9327-408af1f8a924}</ProjectGuid>
     <RootNamespace>GeoCalculator</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
