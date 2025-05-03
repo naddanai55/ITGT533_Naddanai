@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Classwork\\CW_050325\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{65D6FF26-B1E3-4B09-9363-DEDF3C80255F}|CW_050325.vcxproj|C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Classwork\\CW_050325\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{65D6FF26-B1E3-4B09-9363-DEDF3C80255F}|CW_050325.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65D6FF26-B1E3-4B09-9363-DEDF3C80255F}|CW_050325.vcxproj|C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Classwork\\CW_050325\\Triangle.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{65D6FF26-B1E3-4B09-9363-DEDF3C80255F}|CW_050325.vcxproj|solutionrelative:Triangle.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65D6FF26-B1E3-4B09-9363-DEDF3C80255F}|CW_050325.vcxproj|C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Classwork\\CW_050325\\Triangle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{65D6FF26-B1E3-4B09-9363-DEDF3C80255F}|CW_050325.vcxproj|solutionrelative:Triangle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 230,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Classwork\\CW_050325\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Classwork\\CW_050325\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAEwAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-03T03:30:42.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Triangle.hpp",
+              "DocumentMoniker": "C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Classwork\\CW_050325\\Triangle.hpp",
+              "RelativeDocumentMoniker": "Triangle.hpp",
+              "ToolTip": "C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Classwork\\CW_050325\\Triangle.hpp",
+              "RelativeToolTip": "Triangle.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-03T06:17:19.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Triangle.cpp",
+              "DocumentMoniker": "C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Classwork\\CW_050325\\Triangle.cpp",
+              "RelativeDocumentMoniker": "Triangle.cpp",
+              "ToolTip": "C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Classwork\\CW_050325\\Triangle.cpp",
+              "RelativeToolTip": "Triangle.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-03T06:17:04.49Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
