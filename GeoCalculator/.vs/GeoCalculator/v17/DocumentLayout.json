@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -34,7 +34,19 @@
               "RelativeToolTip": "Profile.hpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-30T07:28:24.56Z",
+              "WhenOpened": "2025-04-30T07:28:24.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\GeoCalculator\\Main.cpp",
+              "RelativeDocumentMoniker": "Main.cpp",
+              "ToolTip": "C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\GeoCalculator\\Main.cpp",
+              "RelativeToolTip": "Main.cpp",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-30T07:24:14.353Z",
               "EditorCaption": ""
             },
             {
@@ -45,22 +57,9 @@
               "RelativeDocumentMoniker": "Profile.cpp",
               "ToolTip": "C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\GeoCalculator\\Profile.cpp",
               "RelativeToolTip": "Profile.cpp",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAIwBkAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-30T07:27:53.523Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Main.cpp",
-              "DocumentMoniker": "C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\GeoCalculator\\Main.cpp",
-              "RelativeDocumentMoniker": "Main.cpp",
-              "ToolTip": "C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\GeoCalculator\\Main.cpp",
-              "RelativeToolTip": "Main.cpp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-30T07:24:14.353Z",
               "EditorCaption": ""
             }
           ]
