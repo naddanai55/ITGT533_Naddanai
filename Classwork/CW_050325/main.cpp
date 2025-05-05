@@ -2,39 +2,28 @@
 #include "Circle.hpp"
 #include "Rectangle.hpp"
 #include "Triangle.hpp"
+#include "../../Geometry_OOP/App.hpp"
 
 using namespace std;
 using namespace NP;
-
-void showInstruct()
-{
-	cout << "==============================" << endl;
-	cout << "     Geometry Calculator" << endl;
-	cout << "==============================" << endl;
-	cout << "1: Rectangle" << endl;
-	cout << "2: Triangle" << endl;
-	cout << "3: Circle" << endl;
-	cout << "0: Exit" << endl;
-	cout << "------------------------------" << endl;
-	cout << "Enter your choice: ";
-}
 
 int main()
 {
     Circle cir;
     Rect rect;
     Tri tri;
+    App app;
 
     int choice;
     float a, b;
     while (true)
     {
-        showInstruct();
+        app.showInstruct();
         cin >> choice;
 
         if (choice == 0)
         {
-            cout << "Goodbye!" << endl;
+            app.closeApp();
             break;
         }
 
