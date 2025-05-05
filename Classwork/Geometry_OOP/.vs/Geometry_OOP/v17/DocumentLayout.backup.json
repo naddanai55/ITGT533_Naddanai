@@ -1,0 +1,83 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Geometry_OOP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF7CC14-5C69-4EA7-9AC5-03ED8E1BDA41}|Geometry_OOP.vcxproj|C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Classwork\\CW_050325\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF7CC14-5C69-4EA7-9AC5-03ED8E1BDA41}|Geometry_OOP.vcxproj|C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Geometry_OOP\\App.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CEF7CC14-5C69-4EA7-9AC5-03ED8E1BDA41}|Geometry_OOP.vcxproj|solutionrelative:App.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF7CC14-5C69-4EA7-9AC5-03ED8E1BDA41}|Geometry_OOP.vcxproj|C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Classwork\\CW_050325\\Rectangle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEF7CC14-5C69-4EA7-9AC5-03ED8E1BDA41}|Geometry_OOP.vcxproj|C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Classwork\\CW_050325\\Triangle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Rectangle.cpp",
+              "DocumentMoniker": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Classwork\\CW_050325\\Rectangle.cpp",
+              "RelativeDocumentMoniker": "..\\Classwork\\CW_050325\\Rectangle.cpp",
+              "ToolTip": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Classwork\\CW_050325\\Rectangle.cpp",
+              "RelativeToolTip": "..\\Classwork\\CW_050325\\Rectangle.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-05T10:56:42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Triangle.cpp",
+              "DocumentMoniker": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Classwork\\CW_050325\\Triangle.cpp",
+              "RelativeDocumentMoniker": "..\\Classwork\\CW_050325\\Triangle.cpp",
+              "ToolTip": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Classwork\\CW_050325\\Triangle.cpp",
+              "RelativeToolTip": "..\\Classwork\\CW_050325\\Triangle.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-05T10:56:42.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.hpp",
+              "DocumentMoniker": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Geometry_OOP\\App.hpp",
+              "RelativeDocumentMoniker": "App.hpp",
+              "ToolTip": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Geometry_OOP\\App.hpp",
+              "RelativeToolTip": "App.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-05T11:18:55.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Classwork\\CW_050325\\main.cpp",
+              "RelativeDocumentMoniker": "..\\Classwork\\CW_050325\\main.cpp",
+              "ToolTip": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Classwork\\CW_050325\\main.cpp*",
+              "RelativeToolTip": "..\\Classwork\\CW_050325\\main.cpp*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-05T11:18:45.759Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
