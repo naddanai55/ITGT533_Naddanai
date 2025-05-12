@@ -1,5 +1,7 @@
-﻿  Circle.cpp
-  Rectangle.cpp
+﻿  App.cpp
+  Circle.cpp
   main.cpp
+  Rectangle.cpp
+  Triangle.cpp
   Generating Code...
-  Geometry_OOP.vcxproj -> C:\Users\nparo\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Geometry_OOP\x64\Debug\Geometry_OOP.exe
+  Geometry_OOP.vcxproj -> C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Geometry_OOP\x64\Debug\Geometry_OOP.exe
