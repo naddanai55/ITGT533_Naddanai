@@ -2,11 +2,11 @@
 #include "Profile.hpp"
 
 using namespace std;
-using namespace CW;
+//using namespace CW;
  
 void main()
 {
-	App app = App();
+	CW::App app = CW::App();
 	int age = 0;
 	int code = NULL;
 	while (true)

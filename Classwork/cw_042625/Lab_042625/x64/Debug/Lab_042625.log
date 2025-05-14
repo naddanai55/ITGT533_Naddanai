@@ -1,5 +1,5 @@
 ﻿  Main.cpp
+C:\Users\nparo\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_042625\Main.cpp(7,6): warning C4326: return type of 'main' should be 'int' instead of 'void'
   Profile.cpp
-C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3nd\ITGT533 Game Engine Development\Classwork\Lab_042625\Main.cpp(7,6): warning C4326: return type of 'main' should be 'int' instead of 'void'
   Generating Code...
-  Lab_042625.vcxproj -> C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3nd\ITGT533 Game Engine Development\Classwork\Lab_042625\x64\Debug\Lab_042625.exe
+  Lab_042625.vcxproj -> C:\Users\nparo\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_042625\x64\Debug\Lab_042625.exe
