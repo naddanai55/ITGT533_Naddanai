@@ -7,18 +7,18 @@ void textSwap(char* ptr_g);
 int main()
 {
     char g[100] = ""; 
-    cout << "Original: ";
-    cin >> g; 
+	cout << "Enter a string: ";
+    cin.getline(g, 100);
+    cout << "Original string: " << g << endl;
     char* ptr_g = g;
-    cout << "Reversed: ";
+    cout << "Reversed string: ";
     textSwap(ptr_g);
     return 0;
 }
 
 void textSwap(char* ptr_g)
 {
-    int len = strlen(ptr_g);
-    for (int i = len - 1; i >= 0; i--)
+    for (int i = strlen(ptr_g) - 1; i >= 0; i--)
     {
         cout << *(ptr_g + i);
     }
