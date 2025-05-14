@@ -7,7 +7,7 @@ void textSwap(char* ptr_g);
 int main()
 {
     char g[100] = ""; 
-	cout << "Enter a string: ";
+    cout << "Enter a string: ";
     cin.getline(g, 100);
     cout << "Original string: " << g << endl;
     char* ptr_g = g;
