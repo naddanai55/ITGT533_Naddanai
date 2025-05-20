@@ -1,3 +1,3 @@
 ﻿  main.cpp
-C:\Users\nparo\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Reversal_String\main.cpp(21,16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  Reversal_String.vcxproj -> C:\Users\nparo\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Reversal_String\x64\Debug\Reversal_String.exe
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Reversal_String\main.cpp(21,16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Reversal_String.vcxproj -> C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Reversal_String\x64\Debug\Reversal_String.exe
