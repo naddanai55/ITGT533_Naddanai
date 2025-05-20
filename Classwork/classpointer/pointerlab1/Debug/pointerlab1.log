@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\Student\Documents\MarkProjects\GameEngine\lab01\pointerlab1\main.cpp(6,6): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  pointerlab1.vcxproj -> C:\Users\Student\Documents\MarkProjects\GameEngine\lab01\pointerlab1\Debug\pointerlab1.exe
