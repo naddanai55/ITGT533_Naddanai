@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\ight-weight_Utility_String\\",
+  "WorkspaceRootPath": "C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\light-weight_Utility_String\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4527B0C1-558E-406B-B003-641FD7F63177}|ight-weight_Utility_String.vcxproj|C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\ight-weight_Utility_String\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4527B0C1-558E-406B-B003-641FD7F63177}|ight-weight_Utility_String.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4527B0C1-558E-406B-B003-641FD7F63177}|ight-weight_Utility_String.vcxproj|C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\ight-weight_Utility_String\\String.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{4527B0C1-558E-406B-B003-641FD7F63177}|ight-weight_Utility_String.vcxproj|C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\light-weight_Utility_String\\String.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4527B0C1-558E-406B-B003-641FD7F63177}|ight-weight_Utility_String.vcxproj|solutionrelative:String.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4527B0C1-558E-406B-B003-641FD7F63177}|ight-weight_Utility_String.vcxproj|C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\ight-weight_Utility_String\\String.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{4527B0C1-558E-406B-B003-641FD7F63177}|ight-weight_Utility_String.vcxproj|C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\light-weight_Utility_String\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4527B0C1-558E-406B-B003-641FD7F63177}|ight-weight_Utility_String.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4527B0C1-558E-406B-B003-641FD7F63177}|ight-weight_Utility_String.vcxproj|C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\light-weight_Utility_String\\String.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4527B0C1-558E-406B-B003-641FD7F63177}|ight-weight_Utility_String.vcxproj|solutionrelative:String.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -22,30 +22,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 213,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\ight-weight_Utility_String\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\light-weight_Utility_String\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\ight-weight_Utility_String\\main.cpp",
+              "ToolTip": "C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\light-weight_Utility_String\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-20T05:48:09.741Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "String.cpp",
-              "DocumentMoniker": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\ight-weight_Utility_String\\String.cpp",
+              "DocumentMoniker": "C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\light-weight_Utility_String\\String.cpp",
               "RelativeDocumentMoniker": "String.cpp",
-              "ToolTip": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\ight-weight_Utility_String\\String.cpp",
+              "ToolTip": "C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\light-weight_Utility_String\\String.cpp",
               "RelativeToolTip": "String.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIcAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-20T05:47:07.618Z",
               "EditorCaption": ""
@@ -60,11 +60,11 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "String.hpp",
-              "DocumentMoniker": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\ight-weight_Utility_String\\String.hpp",
+              "DocumentMoniker": "C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\light-weight_Utility_String\\String.hpp",
               "RelativeDocumentMoniker": "String.hpp",
-              "ToolTip": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\ight-weight_Utility_String\\String.hpp",
+              "ToolTip": "C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\light-weight_Utility_String\\String.hpp",
               "RelativeToolTip": "String.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAAcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-20T05:38:04.14Z",
               "EditorCaption": ""

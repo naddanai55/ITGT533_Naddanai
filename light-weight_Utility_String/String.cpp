@@ -7,13 +7,11 @@ using namespace std;
 
 namespace NP
 {
-    // Default constructor
     String::String(): data(new char[1]), length(0)
     {
         data[0] = '\0';
     }
 
-    // Constructor from C-string
     String::String(const char* str)
     {
         if (str)
@@ -30,19 +28,16 @@ namespace NP
         }
     }
 
-    // Copy constructor
     String::String(const String& other): data(new char[other.length + 1]), length(other.length)
     {
         strcpy_s(data, length + 1, other.data);
     }
 
-    // Destructor
     String::~String()
     {
         delete[] data;
     }
 
-    // Assignment operator
     String& String::operator=(const String& other)
     {
         if (this != &other) 
@@ -55,14 +50,12 @@ namespace NP
         return *this;
     }
 
-    // Character access operator
     char String::operator[](size_t index) const
     {
-        assert(index < length && "operator[] Out of bounds");
+        assert(index < length && "Invalid operator[]");
         return data[index];
     }
 
-    // Concatenation
     String String::operator+(const String& other) const
     {
         size_t newLength = length + other.length;
@@ -77,68 +70,57 @@ namespace NP
         return result;
     }
 
-    // Equality
     bool String::operator==(const String& other) const
     {
         return strcmp(data, other.data) == 0;
     }
 
-    // Inequality
     bool String::operator!=(const String& other) const
     {
         return !(*this == other);
     }
 
-    // Less than
     bool String::operator<(const String& other) const
     {
         return strcmp(data, other.data) < 0;
     }
 
-    // Greater than
     bool String::operator>(const String& other) const
     {
         return strcmp(data, other.data) > 0;
     }
 
-    // Get string length
     size_t String::getLength() const
     {
         return length;
     }
 
-    // Get C-string
     const char* String::getCString() const
     {
         return data;
     }
 
-    // Get character at index
     char String::charAt(size_t index) const
     {
-        assert(index < length && "charAt Out of range");
+        assert(index < length && "Invalid charAt");
         return data[index];
     }
 
-    // Compare strings
     int String::compare(const String& other) const
     {
         return strcmp(data, other.data);
     }
 
-    // Check equality
     bool String::equals(const String& other) const
     {
         return *this == other;
     }
 
-    // Check if empty
     bool String::isEmpty() const
     {
         return length == 0;
     }
 
-    // Substring
     String String::substring(size_t start, size_t end) const
     {
         assert(start <= end && end <= length && "Invalid substring");

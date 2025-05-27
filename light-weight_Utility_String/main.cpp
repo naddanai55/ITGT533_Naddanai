@@ -22,43 +22,53 @@ int main()
         cout << "C-string is OK" << endl;
         cout << "getLength is OK" << endl;
     }
+
     if (s1.charAt(4) == 'o')
     {
         cout << "charAt() is OK" << endl;
     }
+
     if (s2 == s1)
     {
         cout << "copy constructor is OK" << endl;
         cout << "operator== is OK" << endl;
     }
+
     if (s4 == String("Hello World"))
     {
         cout << "operator+ is OK" << endl;
     }
+
     if (s5 == s1)
     {
         cout << "substring is OK" << endl;
     }
+
     if (s1[0] == 'H')
     {
         cout << "operator[] is OK" << endl;
     }
+
     if (a != b)
     {
         cout << "operator!= is OK" << endl;
     }
+
     if (a < b) 
     {
         cout << "operator< is OK" << endl;
     }
+
     if (b > a)
     {
         cout << "operator> is OK" << endl;
     }
+
     if (a.equals(String("Apple")))
     {
         cout << "equals is OK" << endl;
     }
+
     if (a.compare(b) < 0)
     {
         cout << "compare is OK" << endl;
@@ -66,4 +76,4 @@ int main()
 
     assert(_CrtCheckMemory());
     _CrtDumpMemoryLeaks();
-}
+} 
