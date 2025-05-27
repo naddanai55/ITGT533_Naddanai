@@ -1,0 +1,164 @@
+﻿  main.cpp
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(34,13): error C2988: unrecognizable template declaration/definition
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(34,13): error C2143: syntax error: missing ';' before '<'
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(34,13): error C2059: syntax error: '<'
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(34,18): error C2039: 'SimpleStack': is not a member of '`global namespace''
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(34,32): error C2143: syntax error: missing ';' before '{'
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(34,32): error C2447: '{': missing function header (old-style formal list?)
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(37,13): error C2988: unrecognizable template declaration/definition
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(37,13): error C2143: syntax error: missing ';' before '<'
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(37,13): error C2059: syntax error: '<'
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(37,18): error C2039: 'SimpleStack': is not a member of '`global namespace''
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(38,2): error C2143: syntax error: missing ';' before '{'
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(38,2): error C2447: '{': missing function header (old-style formal list?)
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(45,18): error C2988: unrecognizable template declaration/definition
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(45,18): error C2143: syntax error: missing ';' before '<'
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(45,7): error C2182: 'SimpleStack': this use of 'void' is not valid
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(45,18): error C2059: syntax error: '<'
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(45,23): error C2039: 'push': is not a member of '`global namespace''
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(46,2): error C2143: syntax error: missing ';' before '{'
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(46,2): error C2447: '{': missing function header (old-style formal list?)
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(55,15): error C2988: unrecognizable template declaration/definition
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(55,15): error C2143: syntax error: missing ';' before '<'
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(55,4): error C2371: 'SimpleStack': redefinition; different basic types
+  (compiling source file 'main.cpp')
+      C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(45,7):
+      see declaration of 'SimpleStack'
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(55,15): error C2059: syntax error: '<'
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(55,20): error C2039: 'pop': is not a member of '`global namespace''
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(56,2): error C2143: syntax error: missing ';' before '{'
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(56,2): error C2447: '{': missing function header (old-style formal list?)
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(65,18): error C2988: unrecognizable template declaration/definition
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(65,18): error C2143: syntax error: missing ';' before '<'
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(65,7): error C2182: 'SimpleStack': this use of 'void' is not valid
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(65,7): error C2374: 'SimpleStack': redefinition; multiple initialization
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(65,7): error C2086: 'int SimpleStack': redefinition
+  (compiling source file 'main.cpp')
+      C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(45,7):
+      see declaration of 'SimpleStack'
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(65,18): error C2059: syntax error: '<'
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(65,23): error C2039: 'printStack': is not a member of '`global namespace''
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(66,2): error C2143: syntax error: missing ';' before '{'
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(66,2): error C2447: '{': missing function header (old-style formal list?)
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(75,18): error C2988: unrecognizable template declaration/definition
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(75,18): error C2143: syntax error: missing ';' before '<'
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(75,7): error C2182: 'SimpleStack': this use of 'void' is not valid
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(75,7): error C2374: 'SimpleStack': redefinition; multiple initialization
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(75,7): error C2086: 'int SimpleStack': redefinition
+  (compiling source file 'main.cpp')
+      C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(45,7):
+      see declaration of 'SimpleStack'
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(75,18): error C2059: syntax error: '<'
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(75,23): error C2039: 'clear': is not a member of '`global namespace''
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(76,2): error C2143: syntax error: missing ';' before '{'
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(76,2): error C2447: '{': missing function header (old-style formal list?)
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(82,20): error C2988: unrecognizable template declaration/definition
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(82,20): error C2143: syntax error: missing ';' before '<'
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(82,9): error C2371: 'SimpleStack': redefinition; different basic types
+  (compiling source file 'main.cpp')
+      C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(45,7):
+      see declaration of 'SimpleStack'
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(82,20): error C2059: syntax error: '<'
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(82,25): error C2039: 'getSize': is not a member of '`global namespace''
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(83,2): error C2143: syntax error: missing ';' before '{'
+  (compiling source file 'main.cpp')
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Classwork\CW_05242025\SimpleStack.hpp(83,2): error C2447: '{': missing function header (old-style formal list?)
+  (compiling source file 'main.cpp')
+  
+  SimpleStack.cpp
+  Generating Code...
