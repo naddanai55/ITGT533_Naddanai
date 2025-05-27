@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Dynamic_Vector\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F59B9A5E-4697-4AC1-B367-8BBDC847C506}|Dynamic_Vector.vcxproj|C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Dynamic_Vector\\DynamicArray.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F59B9A5E-4697-4AC1-B367-8BBDC847C506}|Dynamic_Vector.vcxproj|solutionrelative:DynamicArray.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F59B9A5E-4697-4AC1-B367-8BBDC847C506}|Dynamic_Vector.vcxproj|C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Dynamic_Vector\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F59B9A5E-4697-4AC1-B367-8BBDC847C506}|Dynamic_Vector.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F59B9A5E-4697-4AC1-B367-8BBDC847C506}|Dynamic_Vector.vcxproj|C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Dynamic_Vector\\DynamicArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F59B9A5E-4697-4AC1-B367-8BBDC847C506}|Dynamic_Vector.vcxproj|solutionrelative:DynamicArray.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DynamicArray.cpp",
+              "DocumentMoniker": "C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Dynamic_Vector\\DynamicArray.cpp",
+              "RelativeDocumentMoniker": "DynamicArray.cpp",
+              "ToolTip": "C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Dynamic_Vector\\DynamicArray.cpp",
+              "RelativeToolTip": "DynamicArray.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-27T07:00:35.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Dynamic_Vector\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Dynamic_Vector\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-27T06:42:52.939Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DynamicArray.hpp",
+              "DocumentMoniker": "C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Dynamic_Vector\\DynamicArray.hpp",
+              "RelativeDocumentMoniker": "DynamicArray.hpp",
+              "ToolTip": "C:\\Users\\Nai\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Dynamic_Vector\\DynamicArray.hpp",
+              "RelativeToolTip": "DynamicArray.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-27T06:45:29.136Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
