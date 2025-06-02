@@ -127,7 +127,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Crew.cpp" />
+    <ClCompile Include="Laser.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Missile.cpp" />
+    <ClCompile Include="Plasma.cpp" />
+    <ClCompile Include="SpaceShip.cpp" />
+    <ClCompile Include="Weapon.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Crew.hpp" />
+    <ClInclude Include="Laser.hpp" />
+    <ClInclude Include="Missile.hpp" />
+    <ClInclude Include="Plasma.hpp" />
+    <ClInclude Include="SpaceShip.hpp" />
+    <ClInclude Include="Weapon.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
