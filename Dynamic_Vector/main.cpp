@@ -11,6 +11,8 @@ int main()
 
     DynamicArray<int> arr;
     cout << "Create DynamicArray as arr" << endl;
+    cout << arr.data_ptr() << endl;
+
     cout << "Size: " << arr.size() << endl;
     cout << "Capacity: " << arr.capacity() << endl;
     cout << "Elements: ";
@@ -26,8 +28,10 @@ int main()
         }
         cout << endl;
     }
+    cout << "Memory usage: " << arr.memory_usage() << endl;
     cout << endl;
     cout << "--------------------------------------------------" << endl;
+
     cout << "Adding 3 elements using push_back()" << endl;
     arr.push_back(10);
     cout << "push_back 10" << endl;
@@ -53,6 +57,7 @@ int main()
         }
         cout << endl;
     }
+    cout << "Memory usage: " << arr.memory_usage() << endl;
     cout << endl;
     cout << "--------------------------------------------------" << endl;
 
@@ -80,6 +85,7 @@ int main()
         }
         cout << endl;
     }
+    cout << "Memory usage: " << arr.memory_usage() << endl;
     cout << endl;
     cout << "--------------------------------------------------" << endl;
 
@@ -113,8 +119,32 @@ int main()
             }
             cout << endl;
         }
+
+        cout << "Memory usage: " << arr.memory_usage() << endl;
         cout << endl;
     }
+    cout << "--------------------------------------------------" << endl;
+
+    cout << "resiz to 30 " << endl;
+    arr.resize(30);
+    cout << "After resize" << endl;
+    cout << "Size: " << arr.size() << endl;
+    cout << "Capacity: " << arr.capacity() << endl;
+    cout << "Elements: ";
+    if (arr.empty())
+    {
+        cout << "[Empty]" << endl;
+    }
+    else
+    {
+        for (size_t i = 0; i < arr.size(); ++i)
+        {
+            cout << arr[i] << " ";
+        }
+        cout << endl;
+    }
+    cout << "Memory usage: " << arr.memory_usage() << endl;
+    cout << endl;
     cout << "--------------------------------------------------" << endl;
 
     cout << "Clearing the array using clear()" << endl;
@@ -135,10 +165,11 @@ int main()
         }
         cout << endl;
     }
+    cout << "Memory usage: " << arr.memory_usage() << endl;
     cout << endl;
     cout << "--------------------------------------------------" << endl;
 
-    return 0;
+    //return 0;
 
     assert(_CrtCheckMemory());
     _CrtDumpMemoryLeaks();
