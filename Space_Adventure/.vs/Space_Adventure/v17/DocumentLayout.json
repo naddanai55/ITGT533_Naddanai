@@ -3,32 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{958FBC10-05D0-4D40-B462-3F864810D229}|Space_Adventure.vcxproj|C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\SpaceShip.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{958FBC10-05D0-4D40-B462-3F864810D229}|Space_Adventure.vcxproj|solutionrelative:SpaceShip.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{958FBC10-05D0-4D40-B462-3F864810D229}|Space_Adventure.vcxproj|C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\Weapon.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{958FBC10-05D0-4D40-B462-3F864810D229}|Space_Adventure.vcxproj|solutionrelative:Weapon.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{958FBC10-05D0-4D40-B462-3F864810D229}|Space_Adventure.vcxproj|C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\Laser.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{958FBC10-05D0-4D40-B462-3F864810D229}|Space_Adventure.vcxproj|solutionrelative:Laser.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{958FBC10-05D0-4D40-B462-3F864810D229}|Space_Adventure.vcxproj|C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\Plasma.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{958FBC10-05D0-4D40-B462-3F864810D229}|Space_Adventure.vcxproj|solutionrelative:Plasma.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{958FBC10-05D0-4D40-B462-3F864810D229}|Space_Adventure.vcxproj|C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\Crew.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{958FBC10-05D0-4D40-B462-3F864810D229}|Space_Adventure.vcxproj|solutionrelative:Crew.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{958FBC10-05D0-4D40-B462-3F864810D229}|Space_Adventure.vcxproj|C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\Missile.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{958FBC10-05D0-4D40-B462-3F864810D229}|Space_Adventure.vcxproj|solutionrelative:Missile.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{958FBC10-05D0-4D40-B462-3F864810D229}|Space_Adventure.vcxproj|C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{958FBC10-05D0-4D40-B462-3F864810D229}|Space_Adventure.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{958FBC10-05D0-4D40-B462-3F864810D229}|Space_Adventure.vcxproj|C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\SpaceShip.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{958FBC10-05D0-4D40-B462-3F864810D229}|Space_Adventure.vcxproj|solutionrelative:SpaceShip.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{958FBC10-05D0-4D40-B462-3F864810D229}|Space_Adventure.vcxproj|C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\SpaceShip.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{958FBC10-05D0-4D40-B462-3F864810D229}|Space_Adventure.vcxproj|solutionrelative:SpaceShip.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{958FBC10-05D0-4D40-B462-3F864810D229}|Space_Adventure.vcxproj|C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\Crew.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{958FBC10-05D0-4D40-B462-3F864810D229}|Space_Adventure.vcxproj|solutionrelative:Crew.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,104 +29,78 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 379,
+          "DockedWidth": 309,
           "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SpaceShip.hpp",
-              "DocumentMoniker": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\SpaceShip.hpp",
-              "RelativeDocumentMoniker": "SpaceShip.hpp",
-              "ToolTip": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\SpaceShip.hpp",
-              "RelativeToolTip": "SpaceShip.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-02T13:43:06.249Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Missile.hpp",
-              "DocumentMoniker": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\Missile.hpp",
-              "RelativeDocumentMoniker": "Missile.hpp",
-              "ToolTip": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\Missile.hpp",
-              "RelativeToolTip": "Missile.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-02T13:39:41.758Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Crew.hpp",
-              "DocumentMoniker": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\Crew.hpp",
-              "RelativeDocumentMoniker": "Crew.hpp",
-              "ToolTip": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\Crew.hpp",
-              "RelativeToolTip": "Crew.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-02T14:45:44.875Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Plasma.hpp",
-              "DocumentMoniker": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\Plasma.hpp",
-              "RelativeDocumentMoniker": "Plasma.hpp",
-              "ToolTip": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\Plasma.hpp",
-              "RelativeToolTip": "Plasma.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-02T13:39:27.956Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Laser.hpp",
-              "DocumentMoniker": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\Laser.hpp",
-              "RelativeDocumentMoniker": "Laser.hpp",
-              "ToolTip": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\Laser.hpp",
-              "RelativeToolTip": "Laser.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-02T13:14:26.491Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Weapon.hpp",
-              "DocumentMoniker": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\Weapon.hpp",
-              "RelativeDocumentMoniker": "Weapon.hpp",
-              "ToolTip": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\Weapon.hpp",
-              "RelativeToolTip": "Weapon.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-02T13:11:24.857Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 279,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAFYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-02T13:45:32.724Z",
+              "WhenOpened": "2025-06-03T15:25:37.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SpaceShip.cpp",
+              "DocumentMoniker": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\SpaceShip.cpp",
+              "RelativeDocumentMoniker": "SpaceShip.cpp",
+              "ToolTip": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\SpaceShip.cpp",
+              "RelativeToolTip": "SpaceShip.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-03T15:02:32.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Crew.cpp",
+              "DocumentMoniker": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\Crew.cpp",
+              "RelativeDocumentMoniker": "Crew.cpp",
+              "ToolTip": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\Crew.cpp",
+              "RelativeToolTip": "Crew.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-03T15:28:49.246Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 322,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Crew.hpp",
+              "DocumentMoniker": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\Crew.hpp",
+              "RelativeDocumentMoniker": "Crew.hpp",
+              "ToolTip": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\Crew.hpp",
+              "RelativeToolTip": "Crew.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-03T15:25:57.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SpaceShip.hpp",
+              "DocumentMoniker": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\SpaceShip.hpp",
+              "RelativeDocumentMoniker": "SpaceShip.hpp",
+              "ToolTip": "C:\\Users\\nparo\\OneDrive\\ITGT - Mahidol\\Class\\3rd\\ITGT533 Game Engine Development\\ITGT533_Naddanai\\Space_Adventure\\SpaceShip.hpp",
+              "RelativeToolTip": "SpaceShip.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-03T14:48:35.176Z",
               "EditorCaption": ""
             }
           ]

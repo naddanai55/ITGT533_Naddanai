@@ -6,23 +6,24 @@ using namespace std;
 
 class Crew
 {
-    shared_ptr<SpaceShip> assignedShip;
+private:
     string role;
+    shared_ptr<SpaceShip> assignedShip;
 
 public:
-    Crew(string r, shared_ptr<SpaceShip> ship) : role(r), assignedShip(ship) {} // Copy the shared_ptr (increments ref count)
+    // Constructor
+    Crew(string r, shared_ptr<SpaceShip> ship = nullptr); // Default ship to nullptr
 
-    void displayInfo() const 
-    {
-        cout << "Crew Role: " << role;
-        if (assignedShip) 
-        {
-            cout << ", Assigned to: " << assignedShip->getName();
-        }
-        else 
-        {
-            cout << ", Not assigned to any ship.";
-        }
-        cout << endl;
-    }
+    void displayInfo() const;
+
+    // Assign or re-assign the crew member to a ship
+    void assignToShip(shared_ptr<SpaceShip> ship);
+
+    bool isAssigned() const;
+
+    // Get the role (optional getter)
+    string getRole() const;
+
+    // Get a const reference to the shared_ptr (e.g., to check use_count for demo)
+    const shared_ptr<SpaceShip>& getAssignedShip() const;
 };

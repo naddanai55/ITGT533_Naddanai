@@ -8,9 +8,13 @@ class Missile : public Weapon
 {
 public:
     Missile(int p) : Weapon("Missile", p) {}
-    void fire() override
+    void fire() override 
     {
-        cout << "Firing: " << getType() << endl;
-        cout << "Power: " << getPower() << endl;
+        cout << "Firing " << getType() << " power: " << getPower() << endl;
+    }
+
+    unique_ptr<Weapon> clone() const override 
+    {
+        return make_unique<Missile>(this->power);
     }
 };

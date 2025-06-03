@@ -12,31 +12,18 @@ class SpaceShip
     vector<unique_ptr<Weapon>> weapons;
 
 public:
-    SpaceShip(string n) : name(n), health(100) {}
-    void addWeapon(unique_ptr<Weapon> newWeapon) 
-    {
-        weapons.push_back(move(newWeapon));
-    }
+    // The Rule of Five
+    SpaceShip(std::string n); // Constructor
+    SpaceShip(const SpaceShip& other); // Copy Constructor
+    SpaceShip(SpaceShip&& other) noexcept; // Move Constructor
+    SpaceShip& operator=(const SpaceShip& other); // Copy Assignment
+    SpaceShip& operator=(SpaceShip&& other) noexcept; // Move Assignment Operator
+    ~SpaceShip(); // Destructor
 
-    void fireAllWeapons() 
-    {
-        cout << name << " firing all weapons: " << endl;
-        for (const auto& weapon : weapons)
-        {
-            if (weapon)
-            { 
-                weapon->fire();
-            }
-        }
-    }
-
-    string getName() const 
-    {
-        return name; 
-    }
-
-    int getHealth() const 
-    { 
-        return health; 
-    }
+    void addWeapon(unique_ptr<Weapon> newWeapon);
+    void fireAllWeapons() const;
+    string getName() const;
+    int getHealth() const;
+    const vector<unique_ptr<Weapon>>& getWeapons() const;
+    void setHealth(int h);
 };
