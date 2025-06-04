@@ -16,14 +16,11 @@ public:
 
     void displayInfo() const;
 
-    // Assign or re-assign the crew member to a ship
     void assignToShip(shared_ptr<SpaceShip> ship);
 
     bool isAssigned() const;
 
-    // Get the role (optional getter)
     string getRole() const;
 
-    // Get a const reference to the shared_ptr (e.g., to check use_count for demo)
     const shared_ptr<SpaceShip>& getAssignedShip() const;
 };

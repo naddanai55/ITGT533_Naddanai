@@ -24,7 +24,16 @@ void repairShip(SpaceShip& ship)
 SpaceShip cloneShip(const SpaceShip& originalShip) 
 {
     cout << "Cloning ship: " << originalShip.getName() << "..." << endl;
-    SpaceShip clonedShip = originalShip;
+    string clonedName = originalShip.getName() + " (Clone)";
+    SpaceShip clonedShip(clonedName);
+    clonedShip.setHealth(originalShip.getHealth());
+    for (const auto& weapon_ptr : originalShip.getWeapons()) 
+    {
+        if (weapon_ptr) 
+        {
+            clonedShip.addWeapon(weapon_ptr->clone());
+        }
+    }
     cout << "Cloning complete. New ship named: " << clonedShip.getName() << endl;
     return clonedShip;
 }
@@ -49,7 +58,7 @@ void displayStatus(SpaceShip ship)
             }
         }
     }
-    cout << "--- End of Status ---" << endl;
+    cout << "-------- End of Status --------" << endl;
 }
 
 void upgradeWeapon(Weapon* weaponPtr) 
@@ -70,17 +79,56 @@ int main()
 {
     _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 
-    SpaceShip myShip("Nai1 ship");
-    cout << myShip.getName() << endl;
-    myShip.addWeapon(make_unique<Laser>(15));
-    myShip.addWeapon(make_unique<Plasma>(30));
-    myShip.addWeapon(make_unique<Missile>(75));
-    myShip.fireAllWeapons();
-    displayStatus(myShip);
+    SpaceShip myShip("Nai-SpaceShip");
+    shared_ptr<SpaceShip> mySharedShip = make_shared<SpaceShip>(myShip);
+    cout << "----------- START -----------" << endl;
+    cout << "Ship name: " << mySharedShip->getName() << endl;
+    mySharedShip->addWeapon(make_unique<Laser>(15));
+	mySharedShip->addWeapon(make_unique<Plasma>(30));
+	mySharedShip->addWeapon(make_unique<Missile>(75));
+    mySharedShip->fireAllWeapons();
+    displayStatus(*mySharedShip);
+    cout << "!!! " << mySharedShip->getName() << " Get Damage" << endl;
+    mySharedShip->setHealth(50);
+    displayStatus(*mySharedShip);
+    repairShip(*mySharedShip);
     cout << "------------------------------" << endl;
-	Crew crewMember("Pilot", make_shared<SpaceShip>(myShip));
-	crewMember.displayInfo();
-
+    SpaceShip cloned = cloneShip(*mySharedShip);
+    shared_ptr<SpaceShip> clonedShip = make_shared<SpaceShip>(cloned);
+    cout << "Status of " << mySharedShip->getName() << endl;
+    displayStatus(*mySharedShip);
+    cout << "Status of " << clonedShip->getName() << endl;
+    displayStatus(*clonedShip);
+    cout << "!!! " << clonedShip->getName() << " Get Damage" << endl;
+    clonedShip->setHealth(20);
+    displayStatus(*mySharedShip);
+    displayStatus(*clonedShip);
+    clonedShip->addWeapon(make_unique<Laser>(5));
+    displayStatus(*mySharedShip);
+    displayStatus(*clonedShip);
+    cout << "------------------------------" << endl;
+    Weapon* weaponToUpgrade = mySharedShip->getWeapons()[0].get();
+    upgradeWeapon(weaponToUpgrade);
+    displayStatus(*mySharedShip);
+    Weapon* clonedWeaponToUpgrade = clonedShip->getWeapons()[1].get();
+    upgradeWeapon(clonedWeaponToUpgrade);
+    displayStatus(*clonedShip);
+    Crew crewPilot("Pilot", mySharedShip);
+    crewPilot.displayInfo();
+    Crew crewCaptain("Captain", mySharedShip);
+    crewCaptain.displayInfo();
+    Crew crewEngineer("Engineer", mySharedShip);
+    crewEngineer.displayInfo();
+    cout << "All primary crew assigned to '" << mySharedShip->getName() << "'. Final ref count: " << mySharedShip.use_count() << endl;
+    cout << "(Should be 1 from main + 3 from crew = 4)" << endl;
+    cout << "------------------------------" << endl;
+    crewEngineer.assignToShip(clonedShip); // Engineer leaves mySharedShip, boards anotherShip
+    crewEngineer.displayInfo();
+    cout << "'" << mySharedShip->getName() << "' ref count after Engineer reassigned: " << mySharedShip.use_count() << endl;
+    cout << "'" << clonedShip->getName() << "' ref count after Engineer boarded: " << clonedShip.use_count() << endl;
+    cout << "------------- END ------------" << endl;
+    mySharedShip.reset();
+    clonedShip.reset();
 
     assert(_CrtCheckMemory());
     _CrtDumpMemoryLeaks();

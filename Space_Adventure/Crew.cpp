@@ -1,33 +1,35 @@
 #include "Crew.hpp"
-#include "SpaceShip.hpp" // Include the full definition of SpaceShip here
-                       // because we need to call methods like assignedShip->getName()
+#include "SpaceShip.hpp" 
+#include <iostream>
 
 // Constructor
-Crew::Crew(std::string r, std::shared_ptr<SpaceShip> ship)
-    : role(r), assignedShip(ship) { // The shared_ptr is copied, incrementing its reference count
-    std::cout << "Crew member '" << role << "' created. ";
-    if (assignedShip) {
-        std::cout << "Assigned to ship: " << assignedShip->getName() << ".";
+Crew::Crew(std::string r, std::shared_ptr<SpaceShip> ship) : role(r), assignedShip(ship) 
+{
+    cout << "Crew member '" << role << "' created. ";
+    if (assignedShip) 
+    {
+        cout << "Assigned to ship: " << assignedShip->getName() << "." << endl;
     }
-    else {
-        std::cout << "Not yet assigned to a ship.";
+    else
+    {
+        cout << "Not yet assigned to a ship." << endl;
     }
-    std::cout << std::endl;
 }
 
 // Display crew member's information
-void Crew::displayInfo() const {
-    std::cout << "Crew Role: " << role;
-    if (assignedShip) {
-        // We need SpaceShip::getName() to be available.
-        // Ensure SpaceShip.h is included and SpaceShip has a public getName() const method.
-        std::cout << ", Assigned to Ship: '" << assignedShip->getName() << "'";
-        std::cout << " (Ship Ref Count: " << assignedShip.use_count() << ")"; // Shows how many shared_ptrs point to the ship
+void Crew::displayInfo() const 
+{
+    cout << "Crew Role: " << role;
+    if (assignedShip) 
+    {
+        cout << ", Assigned to Ship: '" << assignedShip->getName() << "'";
+        cout << " (Ship Ref Count: " << assignedShip.use_count() << ")" << endl; // Shows how many shared_ptrs point to the ship
     }
-    else {
-        std::cout << ", Currently unassigned.";
+    else 
+    {
+        cout << ", Currently unassigned." << endl;
     }
-    std::cout << std::endl;
+    cout << endl;
 }
 
 // Assign or re-assign the crew member to a ship
