@@ -79,8 +79,11 @@ int main()
 {
     _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 
-    SpaceShip myShip("Nai-SpaceShip");
-    shared_ptr<SpaceShip> mySharedShip = make_shared<SpaceShip>(myShip);
+    //SpaceShip myShip("Nai-SpaceShip");
+    //shared_ptr<SpaceShip> mySharedShip = make_shared<SpaceShip>(myShip);
+
+    auto mySharedShip = make_shared<SpaceShip>("myShip");
+
     cout << "----------- START -----------" << endl;
     cout << "Ship name: " << mySharedShip->getName() << endl;
     mySharedShip->addWeapon(make_unique<Laser>(15));
@@ -93,8 +96,10 @@ int main()
     displayStatus(*mySharedShip);
     repairShip(*mySharedShip);
     cout << "------------------------------" << endl;
+
     SpaceShip cloned = cloneShip(*mySharedShip);
     shared_ptr<SpaceShip> clonedShip = make_shared<SpaceShip>(cloned);
+
     cout << "Status of " << mySharedShip->getName() << endl;
     displayStatus(*mySharedShip);
     cout << "Status of " << clonedShip->getName() << endl;
@@ -122,7 +127,7 @@ int main()
     cout << "All primary crew assigned to '" << mySharedShip->getName() << "'. Final ref count: " << mySharedShip.use_count() << endl;
     cout << "(Should be 1 from main + 3 from crew = 4)" << endl;
     cout << "------------------------------" << endl;
-    crewEngineer.assignToShip(clonedShip); // Engineer leaves mySharedShip, boards anotherShip
+    crewEngineer.assignToShip(clonedShip);
     crewEngineer.displayInfo();
     cout << "'" << mySharedShip->getName() << "' ref count after Engineer reassigned: " << mySharedShip.use_count() << endl;
     cout << "'" << clonedShip->getName() << "' ref count after Engineer boarded: " << clonedShip.use_count() << endl;
