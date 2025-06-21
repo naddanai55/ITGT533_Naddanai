@@ -19,6 +19,7 @@ MemoryPool::MemoryPool(size_t blockSize, size_t numBlocks) : m_blockSize(blockSi
         currentBlock += m_blockSize;
     }
     *(reinterpret_cast<char**>(currentBlock)) = nullptr;
+   
 }
 
 MemoryPool::~MemoryPool() 

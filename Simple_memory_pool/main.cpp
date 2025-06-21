@@ -14,13 +14,16 @@ int main()
 
     cout << "--- Simple Memory Pool ---" << endl;
     cout << "Create Pool with block size: " << blockSize << " and number of blocks: " << numBlocks << endl;
-    MemoryPool pool(blockSize, numBlocks);
+    //MemoryPool pool(blockSize, numBlocks);
+
+    unique_ptr<MemoryPool> pool(new MemoryPool(blockSize, numBlocks));
+
     vector<void*> allocated_blocks;
-    pool.displayStatus();
+    pool->displayStatus();
     cout << "-------- Allocate --------" << endl;
     for (size_t i = 0; i < numBlocks - 1; i++) 
     {
-        void* block = pool.allocate(sizeof(int));
+        void* block = pool->(sizeof(int));
         if (block) 
         {
             cout << "Allocated block " << (i + 1) << " at " << block << endl;
@@ -28,20 +31,22 @@ int main()
             int* my_int = static_cast<int*>(block);
             *my_int = 100 + i;
             cout << "-->Stored value: " << *my_int << endl;
-            cout << "-->Free blocks now: " << pool.getFreeBlockCount() << endl;
+            cout << "-->Free blocks now: " << pool->getFreeBlockCount() << endl;
         }
     }
-    pool.displayStatus();
+    pool->displayStatus();
     cout << "------- Deallocate -------" << endl;
     if (!allocated_blocks.empty()) 
     {
         void* block_to_free = allocated_blocks.back();
         allocated_blocks.pop_back();
         cout << "Deallocating block at " << block_to_free << endl;
-        pool.deallocate(block_to_free);
-        cout << "  Free blocks now: " << pool.getFreeBlockCount() << endl;
-        pool.displayStatus();
+        pool->deallocate(block_to_free);
+        cout << "  Free blocks now: " << pool->getFreeBlockCount() << endl;
+        pool->displayStatus();
     }
+
+    pool.release();
 
     assert(_CrtCheckMemory());
     _CrtDumpMemoryLeaks();

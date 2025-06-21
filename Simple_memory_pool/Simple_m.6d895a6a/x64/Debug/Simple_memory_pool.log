@@ -1,3 +1,33 @@
-﻿  main.cpp
-C:\Users\nparo\source\repos\Simple_memory_pool\main.cpp(29,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-  Simple_memory_pool.vcxproj -> C:\Users\nparo\source\repos\Simple_memory_pool\x64\Debug\Simple_memory_pool.exe
+﻿  MemoryPool.cpp
+  main.cpp
+  Generating Code...
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Simple_memory_pool\main.cpp(26,29): error C2059: syntax error: '('
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Simple_memory_pool\main.cpp(27,13): error C2039: 'block': is not a member of 'MemoryPool'
+      C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Simple_memory_pool\MemoryPool.hpp(7,7):
+      see declaration of 'MemoryPool'
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Simple_memory_pool\main.cpp(29,13): error C2039: 'cout': is not a member of 'MemoryPool'
+      C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Simple_memory_pool\MemoryPool.hpp(7,7):
+      see declaration of 'MemoryPool'
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Simple_memory_pool\main.cpp(29,44): error C2039: 'i': is not a member of 'MemoryPool'
+      C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Simple_memory_pool\MemoryPool.hpp(7,7):
+      see declaration of 'MemoryPool'
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Simple_memory_pool\main.cpp(29,64): error C2039: 'block': is not a member of 'MemoryPool'
+      C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Simple_memory_pool\MemoryPool.hpp(7,7):
+      see declaration of 'MemoryPool'
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Simple_memory_pool\main.cpp(29,73): error C2039: 'endl': is not a member of 'MemoryPool'
+      C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Simple_memory_pool\MemoryPool.hpp(7,7):
+      see declaration of 'MemoryPool'
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Simple_memory_pool\main.cpp(30,13): error C2039: 'allocated_blocks': is not a member of 'MemoryPool'
+      C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Simple_memory_pool\MemoryPool.hpp(7,7):
+      see declaration of 'MemoryPool'
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Simple_memory_pool\main.cpp(30,30): error C2039: 'push_back': is not a member of 'MemoryPool'
+      C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Simple_memory_pool\MemoryPool.hpp(7,7):
+      see declaration of 'MemoryPool'
+  
+C:\Users\Nai\OneDrive\ITGT - Mahidol\Class\3rd\ITGT533 Game Engine Development\ITGT533_Naddanai\Simple_memory_pool\main.cpp(32,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
