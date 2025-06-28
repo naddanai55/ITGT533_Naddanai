@@ -31,96 +31,52 @@ namespace NP
     bool GameEngine::init(const std::string& gameSettingsFile, const std::string& enemyLevelDataFile, const std::string& mapLayoutFile) 
     {
         ifstream ifs_settings(gameSettingsFile);
-        //if (!ifs_settings.is_open()) 
-        //{
-        //    cerr << "Error: Could not open game settings file: " << gameSettingsFile << endl;
-        //    return false;
-        //}
         json settings_data_json;
-        //try {
         ifs_settings >> settings_data_json;
+
+        ifstream ifs_levels(enemyLevelDataFile);
+        json levels_data_json;
+        ifs_levels >> levels_data_json;
+
+        ifstream ifs_map(mapLayoutFile);
+        json map_data_json;
+        ifs_map >> map_data_json;
+
         gameTitle_ = settings_data_json.value("game_title", "Math Quest");
         welcomeMessage_ = settings_data_json.value("welcome_message", "Welcome!");
         levelSelectInstructions_ = settings_data_json.value("level_select_instructions", "W,A,S,D to move, E to select, Q to quit.");
         quitMessage_ = settings_data_json.value("quit_message", "Thanks for playing!");
-        //}
-        //catch (const json::parse_error& e) {
-        //    cerr << "Error parsing game settings JSON: " << e.what() << endl;
-        //    ifs_settings.close(); return false;
-        //}
         ifs_settings.close();
-
-        // 2. Load Enemy and Level Data
         allEnemies.clear();
         allLevelNumbers.clear();
         enemyArts.clear();
-        // enemyTypeDefinitions.clear(); // Removed
-        // levelEnemyTypeKeys_.clear();   // Removed
         levelsCompleted_.clear();
 
-        ifstream ifs_levels(enemyLevelDataFile);
-        //if (!ifs_levels.is_open()) {
-        //    cerr << "Error: Could not open enemy/level data file: " << enemyLevelDataFile << endl;
-        //    return false;
-        //}
-        json levels_data_json;
-        try {
-            ifs_levels >> levels_data_json;
-            if (levels_data_json.contains("enemy_arts") && levels_data_json["enemy_arts"].is_object()) {
-                for (json::iterator it = levels_data_json["enemy_arts"].begin(); it != levels_data_json["enemy_arts"].end(); ++it) {
-                    if (it.value().is_string()) enemyArts[it.key()] = it.value().get<string>();
-                }
-            }
-            // No loading of enemy_type_definitions
-
-            if (levels_data_json.contains("levels") && levels_data_json["levels"].is_array()) {
-                for (const auto& level_item_json : levels_data_json["levels"]) {
-                    string art_key_idle = level_item_json.value("art_key_idle", "");
-                    string art_key_died = level_item_json.value("art_key_died", "");
-                    // string type_key = level_item_json.v
-                    // alue("enemy_type_key", "standard_calculator"); // No longer read
-
-                    std::string idle_art_str = enemyArts.count(art_key_idle) ? enemyArts[art_key_idle] : "IDLE_ART_MISSING";
-                    std::string died_art_str = enemyArts.count(art_key_died) ? enemyArts[art_key_died] : "DIED_ART_MISSING";
-
-                    allEnemies.emplace_back(level_item_json.value("target", 0), idle_art_str, died_art_str);
-                    allLevelNumbers.push_back(level_item_json.value("numbers", vector<int>{1, 1, 1}));
-                    // No levelEnemyTypeKeys_.push_back(type_key);
-                }
-            }
-            else {
-                cerr << "Error: 'levels' section missing or not an array in " << enemyLevelDataFile << endl;
-                ifs_levels.close(); return false;
+        if (levels_data_json.contains("enemy_arts") && levels_data_json["enemy_arts"].is_object()) 
+        {
+            for (json::iterator it = levels_data_json["enemy_arts"].begin(); it != levels_data_json["enemy_arts"].end(); ++it) 
+            {
+                if (it.value().is_string()) enemyArts[it.key()] = it.value().get<string>();
             }
         }
-        catch (const json::parse_error& e) {
-            cerr << "Error parsing enemy/level JSON: " << e.what() << endl;
-            ifs_levels.close(); return false;
-        }
-        ifs_levels.close();
-        if (allEnemies.empty()) {
-            cerr << "Error: No valid levels loaded from " << enemyLevelDataFile << endl; return false;
+
+        if (levels_data_json.contains("levels") && levels_data_json["levels"].is_array()) 
+        {
+            for (const auto& level_item_json : levels_data_json["levels"]) 
+            {
+                string art_key_idle = level_item_json.value("art_key_idle", "");
+                string art_key_died = level_item_json.value("art_key_died", "");
+
+                std::string idle_art_str = enemyArts.count(art_key_idle) ? enemyArts[art_key_idle] : "IDLE_ART_MISSING";
+                std::string died_art_str = enemyArts.count(art_key_died) ? enemyArts[art_key_died] : "DIED_ART_MISSING";
+
+                allEnemies.emplace_back(level_item_json.value("target", 0), idle_art_str, died_art_str);
+                allLevelNumbers.push_back(level_item_json.value("numbers", vector<int>{1, 1, 1}));
+            }
         }
         levelsCompleted_.assign(allEnemies.size(), false);
+        levelSelectionMap.loadMap(map_data_json);
 
-        // 3. Load Map Layout
-        ifstream ifs_map(mapLayoutFile);
-        if (!ifs_map.is_open()) {
-            cerr << "Error: Could not open map layout file: " << mapLayoutFile << endl;
-            return false;
-        }
-        json map_data_json;
-        try {
-            ifs_map >> map_data_json;
-            if (!levelSelectionMap.loadMap(map_data_json)) { // Uses your Map::loadMap
-                cerr << "Error: Map class failed to load map data from " << mapLayoutFile << endl;
-                ifs_map.close(); return false;
-            }
-        }
-        catch (const json::parse_error& e) {
-            cerr << "Error parsing map layout JSON: " << e.what() << endl;
-            ifs_map.close(); return false;
-        }
         ifs_map.close();
 
         inLevelSelectionMode = true;
@@ -166,6 +122,7 @@ namespace NP
             currentEnemy.showArt(false, cout);
             currentEnemy.showPower(cout);
             cout << "------------------------------------" << endl;
+            cout << "To defeat the enemy, you need to have equal power! " << endl;
             cout << "Current Calculation: " << fixed << setprecision(2) << currentCalculation << endl;
 
             if (needsFirstNumber || needsSecondNumber)
@@ -182,12 +139,12 @@ namespace NP
         }
         else if (levelWon && !awaitingRetryConfirmation && !gameShouldClose) 
         {
-            cout << "\nLevel " << currentLevelIndex + 1 << " CLEARED! Target " << currentEnemy.getTargetPower() << " reached." << endl;
+            cout << "Level " << currentLevelIndex + 1 << " CLEARED! Target " << currentEnemy.getTargetPower() << " reached." << endl;
             cout << "--- Enemy Defeated! ---" << endl;
             if (static_cast<size_t>(currentLevelIndex) < allEnemies.size()) {
-                currentEnemy.showArt(true, cout); // true for DIED art
+                currentEnemy.showArt(true, cout);
             }
-            cout << "\nPress 'Y' to return to map, or 'Q' to quit game: ";
+            cout << "Press 'Y' to return to map, or 'Q' to quit game: ";
 
         }
         else if (awaitingRetryConfirmation) {
@@ -196,25 +153,18 @@ namespace NP
             cout << "Your final calculation: " << fixed << setprecision(2) << currentCalculation << endl;
             cout << "------------------------------------" << endl;
         }
-        else if (gameShouldClose) {
+        else if (gameShouldClose) 
+        {
             bool allDone = true;
             for (bool c : levelsCompleted_) if (!c) allDone = false;
-            // Check if allEnemies is not empty to avoid issues if init failed before loading levels
             if (allDone && !allEnemies.empty() && static_cast<size_t>(currentLevelIndex) >= allEnemies.size() - 1 && levelsCompleted_.back()) {
-                cout << "\nCONGRATULATIONS! All levels cleared in " << gameTitle_ << "!" << endl;
+                cout << "CONGRATULATIONS! All levels cleared in " << gameTitle_ << "!" << endl;
             }
-            else {
-                // This message might appear if quitting before all levels are done.
-                // The release() function prints the main quitMessage_
-            }
-        }
-        else {
-            // This state might be hit briefly if game logic leads here before a clear transition.
-            // cout << "Transitioning..." << endl; 
         }
     }
 
-    void GameEngine::renderLevelSelection() const {
+    void GameEngine::renderLevelSelection() const 
+    {
         cout << "--- " << levelSelectionMap.getTitle() << " ---" << endl;
         cout << endl;
         cout << welcomeMessage_ << endl;
@@ -225,7 +175,8 @@ namespace NP
         cout << "-----------------------" << endl;
     }
 
-    void GameEngine::handleInput() {
+    void GameEngine::handleInput() 
+    {
         playerInputChoice = -1;
         playerMapInput = ' ';
 
@@ -257,7 +208,8 @@ namespace NP
         }
     }
 
-    void GameEngine::update() {
+    void GameEngine::update() 
+    {
         if (gameShouldClose) return;
 
         if (inLevelSelectionMode) {
@@ -300,7 +252,6 @@ namespace NP
             }
 
             if (levelLostAttempt) {
-                // Message is handled by render when awaitingRetryConfirmation becomes true
                 awaitingRetryConfirmation = true;
                 levelLostAttempt = false;
                 return;
@@ -379,7 +330,7 @@ namespace NP
                 bool allDone = true;
                 for (bool c : levelsCompleted_) if (!c) allDone = false;
                 if (allDone) {
-                    cout << "\nCONGRATULATIONS! All levels cleared!" << endl;
+                    cout << "CONGRATULATIONS! All levels cleared!" << endl;
                     gameShouldClose = true;
                 }
                 else {
@@ -387,14 +338,12 @@ namespace NP
                 }
                 levelWon = false;
             }
-            else if (playerInputChoice == 0) { // Pressed 'Q'
+            else if (playerInputChoice == 0) 
+            {
                 gameShouldClose = true;
                 cout << "Quitting after level win." << endl;
             }
-            else if (playerInputChoice == -1 && levelWon) {
-                // Stay in this "Press Y/Q" state if input was invalid for it
-            }
-            // Consume input if it was 'Y' or 'Q'
+          
             if (playerInputChoice == 1 || playerInputChoice == 0) playerInputChoice = -1;
         }
     }
@@ -402,7 +351,6 @@ namespace NP
     void GameEngine::startNewLevel() {
         if (currentLevelIndex < 0 || static_cast<size_t>(currentLevelIndex) >= allEnemies.size()) {
             if (static_cast<size_t>(currentLevelIndex) >= allEnemies.size() && !allEnemies.empty()) {
-                // "All levels won" is handled by the 'allDone' check in update()
             }
             else {
                 cerr << "Error: Invalid level index " << currentLevelIndex << " for startNewLevel." << endl;
@@ -411,11 +359,7 @@ namespace NP
             return;
         }
         currentEnemy = allEnemies[currentLevelIndex];
-        // No currentActiveEnemyTypeKey_ logic needed here anymore
-
         cout << "Starting Level " << currentLevelIndex + 1 << endl;
-        // No enemy type specific messages here
-
         resetCurrentLevelAttempt();
         isGameActive = true;
         inLevelSelectionMode = false;
@@ -444,15 +388,14 @@ namespace NP
         allLevelNumbers.clear();
         currentAvailableNumbers.clear();
         enemyArts.clear();
-        // enemyTypeDefinitions.clear(); // Removed
-        // levelEnemyTypeKeys_.clear();   // Removed
         levelsCompleted_.clear();
-        cout << "\n" << quitMessage_ << endl;
+        cout << endl;
+        cout  << quitMessage_ << endl;
     }
 
     void GameEngine::displayAvailableNumbers() const {
         if (currentAvailableNumbers.empty()) { cout << "No numbers left!" << endl; return; }
-        cout << "Nums: "; for (size_t i = 0; i < currentAvailableNumbers.size(); ++i) cout << "[" << i + 1 << "]:" << currentAvailableNumbers[i] << " "; cout << endl;
+        cout << "You and your comrades: "; for (size_t i = 0; i < currentAvailableNumbers.size(); ++i) cout << "[" << i + 1 << "]:" << currentAvailableNumbers[i] << " "; cout << endl;
     }
     void GameEngine::displayAvailableOperators() const {
         cout << "Ops: "; for (size_t i = 0; i < OPERATORS.size(); ++i) cout << "[" << i + 1 << "]:" << OPERATORS[i] << " "; cout << endl;
@@ -487,5 +430,4 @@ namespace NP
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         return c;
     }
-
 }
