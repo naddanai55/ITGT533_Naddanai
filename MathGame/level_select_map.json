@@ -1,0 +1,15 @@
+{
+  "map_title": "World Map - Choose Your Challenge",
+  "layout": [
+    "###########",
+    "# . . . . #",
+    "# . 1 . . #",
+    "# . . . . #",
+    "# 2 . . . #",
+    "# . . . 3 #",
+    "# . . . . #",
+    "###########"
+  ],
+  "start_player_x": 1,
+  "start_player_y": 1
+}
