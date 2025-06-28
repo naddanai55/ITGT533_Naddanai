@@ -1,1 +1,35 @@
+# Build artifacts
+*.o
+*.obj
 *.exe
+*.dll
+*.so
+*.a
+*.lib
+
+# Intermediate build directories
+build/
+bin/
+out/
+Debug/
+Release/
+
+# IDE-specific files
+.vs/
+*.sln.ide/
+*.suo
+*.user
+*.vcproj.user
+*.vcxproj.user
+.idea/
+cmake-build-*/
+.vscode/
+
+# Temporary files and caches
+*.tmp
+*.log
+*.swp
+*~
+
+# Dependency management caches
+.conan/
