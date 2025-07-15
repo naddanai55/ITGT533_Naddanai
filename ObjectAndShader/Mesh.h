@@ -1,10 +1,7 @@
 #pragma once
-
 #include <GL/glew.h>
 #include <vector>
 #include <glm/glm.hpp>
-
-using namespace std;
 
 struct Vertex {
     glm::vec3 Position;
@@ -18,18 +15,15 @@ struct Vertex {
 
 class Mesh {
 public:
-    vector<Vertex> vertices;
-    vector<unsigned int> indices;
+    std::vector<Vertex> vertices;
+    std::vector<unsigned int> indices;
 
-    Mesh(const vector<Vertex>& vertices, const vector<unsigned int>& indices);
+    Mesh(const std::vector<Vertex>& vertices, const std::vector<unsigned int>& indices);
     ~Mesh();
 
     void Draw() const;
 
-    // Static factory methods for common shapes
-    static Mesh CreateQuad(float width = 1.0f, float height = 1.0f);
-    static Mesh CreateTriangle();
-    static Mesh CreateCircle(float radius = 1.0f, int segments = 32);
+    static Mesh CreateCube(float size = 1.0f);
 
 private:
     unsigned int VAO, VBO, EBO;
