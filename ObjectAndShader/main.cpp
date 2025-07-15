@@ -61,64 +61,65 @@ unsigned int createShaderProgram() {
     return shaderProgram;
 }
 
-int main() {
-    // --- Initialization ---
-    if (!glfwInit()) return -1;
+int main() 
+{
+    if (!glfwInit()) 
+    {
+        std::cout << "Failed to initialize GLFW" << std::endl;
+        return -1;
+    }
+
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     GLFWwindow* window = glfwCreateWindow(800, 600, "3D Object with Mesh Class", NULL, NULL);
-    if (!window) {
+    if (!window) 
+    {
+        std::cout << "Failed to create GLFW window" << std::endl;
         glfwTerminate();
         return -1;
     }
     glfwMakeContextCurrent(window);
-    if (glewInit() != GLEW_OK) return -1;
-    glEnable(GL_DEPTH_TEST); // Enable depth testing for proper 3D rendering
 
-    // --- Setup ---
+    if (glewInit() != GLEW_OK) 
+    {
+        std::cout << "Failed to initialize GLEW" << std::endl;
+        return -1;
+    }
+
+    glEnable(GL_DEPTH_TEST);
+
     unsigned int shaderProgram = createShaderProgram();
-    Mesh cube = Mesh::CreateCube(1.5f); // Create a cube using our Mesh factory method
+    Mesh cube = Mesh::CreateCube(0.5f);
 
-    // --- Render Loop ---
-    while (!glfwWindowShouldClose(window)) {
+    while (!glfwWindowShouldClose(window)) 
+    {
 
         if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
             glfwSetWindowShouldClose(window, true);
 
-        // Clear screen
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-        // Activate shader
         glUseProgram(shaderProgram);
 
-        // Create transformations for a 3D perspective
         glm::mat4 model = glm::mat4(1.0f);
         glm::mat4 view = glm::mat4(1.0f);
         glm::mat4 projection = glm::mat4(1.0f);
 
-        // Rotate the model over time
         model = glm::rotate(model, (float)glfwGetTime() * glm::radians(45.0f), glm::vec3(0.5f, 1.0f, 0.0f));
-        // Move camera back (or the world forward)
         view = glm::translate(view, glm::vec3(0.0f, 0.0f, -5.0f));
-        // Create perspective projection
         projection = glm::perspective(glm::radians(45.0f), 800.0f / 600.0f, 0.1f, 100.0f);
 
-        // Pass matrices to the shader
         glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "model"), 1, GL_FALSE, glm::value_ptr(model));
         glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "view"), 1, GL_FALSE, glm::value_ptr(view));
         glUniformMatrix4fv(glGetUniformLocation(shaderProgram, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
 
-        // Draw the cube
         cube.Draw();
 
-        // Swap buffers and poll events
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
-
-    // Cleanup 
     glDeleteProgram(shaderProgram);
     glfwTerminate();
     return 0;

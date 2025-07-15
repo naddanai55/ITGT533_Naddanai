@@ -3,17 +3,18 @@
 #include <vector>
 #include <glm/glm.hpp>
 
-struct Vertex {
+struct Vertex 
+{
     glm::vec3 Position;
     glm::vec3 Color;
     glm::vec2 TexCoord;
 
-    Vertex(glm::vec3 pos, glm::vec3 color = glm::vec3(1.0f), glm::vec2 texCoord = glm::vec2(0.0f))
-        : Position(pos), Color(color), TexCoord(texCoord) {
-    }
+    Vertex(glm::vec3 pos, glm::vec3 color = glm::vec3(1.0f), glm::vec2 texCoord = glm::vec2(0.0f)) 
+        : Position(pos), Color(color), TexCoord(texCoord) {}
 };
 
-class Mesh {
+class Mesh 
+{
 public:
     std::vector<Vertex> vertices;
     std::vector<unsigned int> indices;
