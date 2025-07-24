@@ -5,6 +5,10 @@
 #include <glm/gtc/type_ptr.hpp>
 #include <iostream>
 
+#include "imgui.h"
+#include "imgui_impl_glfw.h"
+#include "imgui_impl_opengl3.h"
+
 const char* vertexShaderSource = R"(
 #version 330 core
 layout (location = 0) in vec3 aPos;
@@ -15,7 +19,7 @@ uniform mat4 transform;
 
 void main()
 {
-    gl_Position = transform * vec4(aPos, 1.0);
+    gl_Position = transform * vec4(aPos, 3.0);
     vertexColor = aColor;
 }
 )";
@@ -27,7 +31,7 @@ in vec3 vertexColor;
 
 void main()
 {
-    FragColor = vec4(vertexColor, 1.0);
+    FragColor = vec4(1, 0 , 0, 1.0);
 }
 )";
 
@@ -137,6 +141,19 @@ int main() {
 
     // Create shader program
     unsigned int shaderProgram = createShaderProgram();
+    
+    float speed = 0.0f;
+
+    // Setup Dear ImGui context
+    IMGUI_CHECKVERSION();
+    ImGui::CreateContext();
+    ImGuiIO& io = ImGui::GetIO();
+    io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;     // Enable Keyboard Controls
+    io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;      // Enable Gamepad Controls
+
+    // Setup Platform/Renderer backends
+    ImGui_ImplGlfw_InitForOpenGL(window, true);          // Second param install_callback=true will install GLFW callbacks and chain to existing ones.
+    ImGui_ImplOpenGL3_Init();
 
     // Render loop
     while (!glfwWindowShouldClose(window)) {
@@ -148,16 +165,20 @@ int main() {
         glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
+        glfwPollEvents();
+
+
+
         // Create transformation matrix
         glm::mat4 transform = glm::mat4(1.0f);
 
         // Rotate based on time
-        float timeValue = glfwGetTime();
-        transform = glm::rotate(transform, timeValue, glm::vec3(0.0f, 0.0f, 1.0f));
+        //float timeValue = glfwGetTime();
+        transform = glm::translate(transform, glm::vec3{ speed, 0.0, 0.0 });
+
 
         // Use shader program
         glUseProgram(shaderProgram);
-
         // Pass transformation matrix to shader
         unsigned int transformLoc = glGetUniformLocation(shaderProgram, "transform");
         glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(transform));
@@ -166,9 +187,23 @@ int main() {
         glBindVertexArray(VAO);
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
+        ImGui_ImplOpenGL3_NewFrame();
+        ImGui_ImplGlfw_NewFrame();
+        ImGui::NewFrame();
+
+        ImGui::Begin("Inspector");
+        ImGui::Text("Transform");
+        ImGui::SliderFloat("speed", &speed, 0.1f, 0.3f);
+        ImGui::End();
+
+        ImGui::ShowDemoWindow(); // Show demo window! :)
         // Swap buffers and poll events
+
+
+        ImGui::Render();
+        ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+
         glfwSwapBuffers(window);
-        glfwPollEvents();
     }
 
     // Cleanup
@@ -177,6 +212,11 @@ int main() {
     glDeleteBuffers(1, &EBO);
     glDeleteProgram(shaderProgram);
 
+    ImGui_ImplOpenGL3_Shutdown();
+    ImGui_ImplGlfw_Shutdown();
+    ImGui::DestroyContext();
+
     glfwTerminate();
+
     return 0;
 }
